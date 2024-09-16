@@ -30,8 +30,30 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png"><link rel="manifest" href="/public/site.webmanifest">    
     </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <nav class="container py-6 flex items-center justify-between">
+        <!-- Logo -->
+         <a href="#" class="">
+             <img src="./assets/logo.svg" alt="Logo" class="">
+         </a>
+    
+        <!-- NavLinks and cta -->
+        <div class="flex items-center gap-4">
+            <!-- NavLinks -->
+            <ul class="flex items-center gap-4">
+                <li>
+                    <a href="#" class="nav_link">Products</a>
+                    <a href="#" class="nav_link">Solutions</a>
+                    <a href="#" class="nav_link">Pricing</a>
+                    <a href="#" class="nav_link">Ressources</a>
+                </li>
+            </ul>
+
+            <!-- Cta Buttons -->
+             <div class="flex items-center gap-4">
+                <button class="cta">Log&nbsp;In</button>
+                <button class="cta signup">Sign&nbsp;up&nbsp;now</button>
+             </div>
+        </div>
+    </nav>
 </body>
 </html>

@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav{
+    background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
+} 
+
+nav .nav_link{
+    @apply relative py-3 px-2 text-primary font-medium;
+}
+
+nav .nav_link::after{
+    content: "";
+    @apply absolute bottom-2 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-primary rounded-full transition-all duration-300;
+}
+
+nav .nav_link:hover::after{
+    @apply w-[80%];
+}
+
+nav .cta {
+    @apply py-3 px-2 text-primary font-medium rounded-lg duration-300;
+}
+
+nav .cta.signup{
+    @apply px-7 border-2 border-primary;
+}
+
+nav .cta:hover{
+    @apply bg-primary/5;
+}
